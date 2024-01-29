@@ -1,0 +1,312 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.login{
+    
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust the z-index as needed */
+}
+.navigationBar{
+    background-color: #1C1717;
+   
+    
+}
+
+.navigationBar {
+    display: flex;
+    padding: 0 6px; /* Adjust padding as needed */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .navigationBar{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items: center;
+} */
+.logo{
+    width: 150px;
+    color: #fff;
+}
+.nav-links{
+    
+    text-align:right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 13px;
+}
+.nav-links ul li::after{
+content:'';
+width:0%;
+height: 2px;
+background:#f44336;
+display:block;
+margin: auto;
+transition: 0.5s;
+ }
+ .nav-links ul li:hover::after{
+    width:100%;
+ }
+
+ #search{
+    border-radius: 5px 5px 5px 5px;
+    height: 30px;
+    
+ }
+ .cart-profile{
+    display:flex;
+    flex-direction: row;
+    padding:2% 6%;
+    gap: 20px;
+    justify-content:space-between;
+    align-items: center;
+}
+ .cart-profile{
+    
+    text-align:right;
+
+}
+.cart-profile{
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.notifications{
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+}
+.cart{
+    border: none;
+    color: #fff;
+}
+
+#cart-super{  
+    vertical-align:super;  
+    font-size: medium;  
+    }  
+ #notify-super{  
+        vertical-align:super;  
+        font-size: medium;  
+}  
+
+.profile-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #fff;
+}
+.logout{
+    color: #fff;
+}
+
+.logout::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background:#f44336;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+     }
+     .logout:hover::after{
+        width:100%;
+     }
+
+     .notifications::after{
+        content:'';
+        width:0%;
+        height: 2px;
+        background:#f44336;
+        display:block;
+        margin: auto;
+        cursor: pointer;
+        transition: 0.5s;
+         }
+         .notifications:hover::after{
+            width:100%;
+            cursor: pointer;
+         }
+
+         .cart::after{
+            content:'';
+            width:0%;
+            height: 2px;
+           
+            background:#f44336;
+            display:block;
+            margin: auto;
+            transition: 0.5s;
+             }
+             .cart:hover::after{
+                width:100%;
+                cursor: pointer;
+ 
+            }
+            /* Your other styles */
+
+.trial {
+    max-height: 50rem;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Added position relative */
+  }
+  
+  .trial img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .SignUp-container {
+    background: #1C1717 ;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    border-radius:20px 20px 20px 20px;
+    transform: translate(-50%, -60%);
+    min-height: 30rem;
+    color: #fff;
+    min-width: 38rem;
+   
+  }
+
+  .SignUpForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 25rem;
+    color: #1C1717;
+    margin-left: 2.5rem;
+    margin-top: 5rem;
+    border-radius:10px 10px 10px 10px;
+    background-color: #d9d9d9;
+    width: 33rem;
+    overflow-y:scroll;
+  }
+
+  .SignUpForm{
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+/* .SignUpForm::-webkit-scrollbar{
+    display: none;
+} */
+
+#welcome{
+    color: #1C1717;
+    font-size: 50px;
+    position: sticky;
+}
+
+
+  .SignUpForm input,
+  .SignUpForm h3,
+  .SignUpForm  h1
+  {
+    margin-left: 2rem;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .SignUpForm button{
+    margin-top: 1rem;
+    margin-left: 5rem;
+    border-radius: 20px 20px 20px 20px;
+    width: 20rem;
+    height: 18rem;
+    cursor: pointer;
+  }
+
+  .SignUpForm button:hover{
+     background-color:rgb(172, 156, 156) ;
+     color: black;
+  }
+  .SignUpForm input{
+      width: 25rem;
+      height: 20rem;
+  }
+  
+            
+            
+      
+/* footer */
+.footer-info-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1717;
+    height: 500px;
+    
+}
+   
+.footer-header{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    width: 100%;
+}
+.nameFoot{
+    width: 50%;
+}
+
+
+.emailFoot{
+    width: 50%;
+    text-align: left;
+}
+
+.footer-extra-info{
+    display: flex;
+    flex-direction: row;
+    
+    color: #fff;
+}
+
+.address-logos{
+     display: flex;
+     flex-direction: column;
+    width: 50%;
+}
+
+.emailNewsletter{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+   justify-items: left;
+    width: 50%;
+}
+.emailNewsletter input{
+   max-width: fit-content;
+   margin-bottom: 20px;
+}
+.emailNewsletter button{
+   max-width: 150px;
+}
+
+      

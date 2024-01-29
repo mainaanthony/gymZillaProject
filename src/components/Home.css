@@ -1,0 +1,378 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.login{
+    
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust the z-index as needed */
+}
+.navigationBar{
+    background-color: #1C1717;
+   
+    
+}
+
+.navigationBar {
+    display: flex;
+    padding: 0 6px; /* Adjust padding as needed */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .navigationBar{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items: center;
+} */
+.logo{
+    width: 150px;
+    color: #fff;
+}
+.nav-links{
+    
+    text-align:right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+color: #fff;
+text-decoration: none;
+font-size: 13px;
+}
+.nav-links ul li::after{
+content:'';
+width:0%;
+height: 2px;
+background:#f44336;
+display:block;
+margin: auto;
+transition: 0.5s;
+ }
+ .nav-links ul li:hover::after{
+    width:100%;
+ }
+
+ #search{
+    border-radius: 5px 5px 5px 5px;
+    height: 30px;
+    
+ }
+ .cart-profile{
+    display:flex;
+    flex-direction: row;
+    padding:2% 6%;
+    gap: 20px;
+    justify-content:space-between;
+    align-items: center;
+}
+ .cart-profile{
+    
+    text-align:right;
+
+}
+.cart-profile{
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.notifications{
+    border-radius: 5px 5px 5px 5px;
+    color: #fff;
+}
+.cart{
+    border: none;
+    color: #fff;
+}
+
+#cart-super{  
+    vertical-align:super;  
+    font-size: medium;  
+    }  
+ #notify-super{  
+        vertical-align:super;  
+        font-size: medium;  
+}  
+
+.profile-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #fff;
+}
+.logout{
+    color: #fff;
+}
+
+.logout::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background:#f44336;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+     }
+     .logout:hover::after{
+        width:100%;
+     }
+
+     .notifications::after{
+        content:'';
+        width:0%;
+        height: 2px;
+        background:#f44336;
+        display:block;
+        margin: auto;
+        cursor: pointer;
+        transition: 0.5s;
+         }
+         .notifications:hover::after{
+            width:100%;
+            cursor: pointer;
+         }
+
+         .cart::after{
+            content:'';
+            width:0%;
+            height: 2px;
+           
+            background:#f44336;
+            display:block;
+            margin: auto;
+            transition: 0.5s;
+             }
+             .cart:hover::after{
+                width:100%;
+                cursor: pointer;
+ 
+            }
+            /* Your other styles */
+
+.trial {
+    max-height: 50rem;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Added position relative */
+  }
+  
+  .trial img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+
+/* lets get to business */
+
+.main-container{
+    display:grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    height: 600px;
+    
+}
+
+
+.sidebar{
+    display:grid;
+    grid-template-rows: 1fr 5fr  ;
+    background-color: #f44336;
+    height: 100%;
+}
+
+.userDetails{
+    background-color: aliceblue;
+}
+
+
+.sidebarOptions{
+   background-color: aquamarine;
+
+}
+.extra{
+    background-color: aquamarine;
+}
+
+.middle-container{
+    display: grid;
+    grid-template-rows: 500px 400px 400px;
+    height: 100%;
+    background-color: aqua;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.middle-container{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.middle-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.dignitaries{
+    display: flex;
+    flex-direction: row;
+    background-color: #f44336;
+    overflow-x: scroll;
+    overflow-y: hidden; /* Ensure vertical scrolling is disabled */
+    white-space: nowrap; /* Keep items in a single line */
+    cursor: pointer;
+}
+
+
+
+
+
+.dignitaries{
+   
+    -ms-overflow-style: none;
+   
+}
+
+.dignitaries::-webkit-scrollbar{
+    display: none;
+}
+
+.active-class-sessions{
+    margin-top: 2rem;
+    height: 29rem;
+    width:20rem;
+    margin-left: 1rem;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #1C1717;
+}
+
+
+.active-nutrition-sessions{
+    margin-top: 1rem;
+    height: 29rem;
+    width:20rem;
+    margin-left: 1rem;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #1C1717;
+}
+
+
+.extra-sessions{
+    margin-top: 1rem;
+    height: 29rem;
+    width:20rem;
+    margin-left: 1rem;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #1C1717;
+}
+
+.classes{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+.classes h3{
+    align-self: flex-start;
+    margin-left: 5rem;
+}
+
+.classes-container{
+    display: flex;
+    overflow-x: auto;
+    
+    /* Ensure vertical scrolling is disabled */
+   
+}
+
+
+
+.class-card{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fff;
+    margin-left: 1rem;
+}
+
+.nutritions{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.nutritions h3{
+    align-self: flex-start;
+    margin-left: 5rem;
+}
+
+
+
+
+
+.suggestions{
+    display:flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: blueviolet;
+}
+
+.suggestions{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.suggestions::-webkit-scrollbar{
+    display: none;
+} 
+
+.top-class{
+    background-color: bisque;
+    height: 200px;
+    width: 18rem;
+
+}
+
+/* crazy */
+.scrollable-container {
+    overflow-x: hidden; /* Default: Hide scrollbar */
+  }
+  
+  .scrollable-container:hover {
+    overflow-x: scroll; /* Show scrollbar when hovered */
+  }
+  
+  .scrollable-container::-webkit-scrollbar {
+    width: 8px; /* Customize scrollbar width */
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Customize scrollbar thumb color */
+    border-radius: 4px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Customize scrollbar thumb color on hover */
+  }
+  
+
+ 

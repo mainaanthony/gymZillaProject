@@ -1,9 +1,19 @@
+import LandingPage from '../src/Landing/landingPage';
+import SignUp from './components/SignUp';
+import Home from './components/Home'
+import LoginPage from '../src/components/Login'
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+ function App() {
+   return (
+     <div className="App">
+
+     {/* <LoginPage/> */}
+     <Home/>
+     {/* <SignUp/> */}
+     {/* <LandingPage /> */}
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,8 +28,6 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
-}
-
-export default App;
+     </div>
+   );
+ }
